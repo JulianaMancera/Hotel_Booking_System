@@ -10,7 +10,7 @@ class AdminPanel(tk.Toplevel, HotelManagement):
         self.hotel = hotel
 
         self.title("Admin Panel")
-        self.geometry("800x350")
+        self.geometry("800x440")
         self.configure(bg="#B09AFF")
 
         ttk.Label(self, text="ROOM STATUS", font=("Century Schoolbook", 14), background="#B09AFF", foreground="black").pack(pady=5)

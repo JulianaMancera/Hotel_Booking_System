@@ -13,6 +13,10 @@ class HotelBookingApp(tk.Tk):
         self.geometry("500x300")
         self.configure(bg="#9370DB")
 
+        style = ttk.Style()
+        style.configure("TButton", font=("Arial", 14), padding=10)
+        style.map("TButton", background=[("active", "#8A3CC5")])
+
         ttk.Label(self, text="✰ Hotel Booking System ✰ ", font=("Century Schoolbook", 24, "bold"), background="#9370DB", foreground="BLACK").pack(pady=10)
         ttk.Button(self, text="Book a Room", command=self.open_booking).pack(pady=7)
         ttk.Button(self, text="Admin Panel", command=self.open_admin).pack(pady=7)
