@@ -1,21 +1,17 @@
 # 🏨 Hotel_Booking_System
 
-&nbsp;&nbsp;A GUI-based hotel management system built with Python (Tkinter). This system allows users to book rooms, manage reservations, and includes VIP rooms with exclusive perks.
+&nbsp;&nbsp;&nbsp;&nbsp;A GUI-based hotel management system built with Python (Tkinter). This system allows users to book rooms, manage reservations, and includes VIP rooms with exclusive perks.
 
 ## 📌 Features
-✅ Book Regular & VIP Rooms
-✅ Admin Panel for Managing Bookings
-✅ VIP Rooms with Special Access Benefits
-✅ Supports Different Stay Durations (Overnight/Half-day)
+✅ Book Regular & VIP Rooms <br>
+✅ Admin Panel for Managing Bookings <br>
+✅ VIP Rooms with Special Access Benefits <br>
+✅ Supports Different Stay Durations (Overnight/Half-day) <br>
 
 
 ## 📂 Project Structure
-📁 hotel-booking-system
-│── HotelBookingApp.py      # Main application
-│── booking_window.py       # Booking system GUI
-│── admin_panel.py          # Admin dashboard
-│── hotel_management.py     # Core room management (Regular & VIP)
-│── README.md               # Project documentation
+![image](https://github.com/user-attachments/assets/aae6d501-6162-4b5e-beb1-777f55e6e35e)
+
 
 ## 🛠 Technologies Used
 - Python (Core logic)
