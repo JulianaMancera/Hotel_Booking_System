@@ -3,14 +3,13 @@ from tkinter import messagebox, ttk
 from hotel_management import HotelManagement
 
 # Admin panel (Multiple Inheritance from tk.Toplevel and HotelManagement)
-
 class AdminPanel(tk.Toplevel, HotelManagement):
     def __init__(self, master, hotel):
         tk.Toplevel.__init__(self, master)
         self.hotel = hotel
 
         self.title("Admin Panel")
-        self.geometry("800x440")
+        self.geometry("800x600")
         self.configure(bg="#B09AFF")
 
         ttk.Label(self, text="ROOM STATUS", font=("Century Schoolbook", 14), background="#B09AFF", foreground="black").pack(pady=5)
@@ -28,7 +27,7 @@ class AdminPanel(tk.Toplevel, HotelManagement):
     def update_list(self):
         for i in self.tree.get_children():
             self.tree.delete(i)
-        for room_no, room in self.hotel.rooms.items():
+        for room_no, room in {**self.hotel.rooms, **self.hotel.vip_rooms}.items():
             self.tree.insert("", "end", values=(room_no, room.room_type, room.status, room.booking_date or "N/A"))
 
     def cancel_booking(self):
